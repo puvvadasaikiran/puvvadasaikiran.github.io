@@ -68,8 +68,9 @@
         let phases = JSON.parse(JSON.stringify(basePhases));
 
         function startBreathing() {
-            resetBreathing(verbose=false)
+            
             if (!timer) {
+                resetBreathing(verbose=false)
                 if (!startTime) {
                     startTime = Date.now();
                 }
